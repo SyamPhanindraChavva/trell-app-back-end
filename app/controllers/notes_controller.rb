@@ -15,7 +15,7 @@ class NotesController < ApplicationController
    @note = Note.find(params[:id])
    if @note.update(note_params2)
      @note.save
-   render json: Note.find(params[:id])
+   render json: Note.all
   end
  end
 
